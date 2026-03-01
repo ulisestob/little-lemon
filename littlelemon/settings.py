@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "rest_framework",
     "restaurant",
 ]
 
@@ -76,11 +77,11 @@ WSGI_APPLICATION = "littlelemon.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'reservations', #LittleLemon
-        'HOST' : 'mysql-reservations.orb.local',
+        'NAME': 'LittleLemon',
+        'HOST' : 'mysql-ll.orb.local',
         'PORT' : '3306',
         'USER' : 'root',
-        'PASSWORD' : 'root@123', # ''
+        'PASSWORD' : '',
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
         }
